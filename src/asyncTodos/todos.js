@@ -1,4 +1,5 @@
 import { addTodo, getManyTodosAction, completedTodo, removeTodo } from "../store/todoReducer";
+
 import axios from "axios";
 
 export const getFetchTodos = () => {
@@ -37,9 +38,8 @@ export const removeFetchTodo = (id, params) => {
   return (dispatch) => {
     axios
       .delete(`https://jsonplaceholder.typicode.com/todos/${id}`, params)
-      .then((res) => {
-        console.log(res);
-        dispatch(removeTodo(res.config.id));
+      .then(() => {
+        dispatch(removeTodo(params.id));
       });
   };
 };

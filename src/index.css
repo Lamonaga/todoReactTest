@@ -34,17 +34,12 @@
   margin: 0 10px;
 }
 
-.btn_auth {
-  font-size: 15px;
-  color: #fff;
-  margin: 10px;
-  padding: 10px 30px;
-  border: none;
-  background-color: #4caf50;
-  border-radius: 10px;
+.btn_todo {
+  margin: 5px;
+
 }
 
-.link_auth {
+.link_todo {
   text-align: center;
 }
 

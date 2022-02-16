@@ -9,12 +9,12 @@ import { Button } from "./components";
 function App() {
   return (
     <div className="container">
-      <div className="link_auth">
+      <div className="link_todo ">
         <NavLink to="/home">
-          <Button>Home</Button>
+          <Button className='btn_todo'>Home</Button>
         </NavLink>
         <NavLink to="/todos">
-          <button className="btn_auth">Todos</button>
+        <Button className='btn_todo'>Todo</Button>
         </NavLink>
       </div>
       <Routes>

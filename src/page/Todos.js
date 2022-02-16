@@ -1,6 +1,6 @@
 import { getFetchTodos, postFetchTodo } from "../asyncTodos/todos";
 import { useDispatch, useSelector } from "react-redux";
-import {Input, Button, Header, List, Pagination} from '../components';
+import {Input, Button, Header, List} from '../components';
 import { useEffect, useState } from "react";
 
 const Todos = () => {
